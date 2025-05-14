@@ -1,0 +1,45 @@
+{"testData":
+        [
+        {
+        "conition": "Validate with all field data",
+        "firstName": "John",
+        "lastName": "Doe",
+        "phoneNumber": "123-456-7890",
+        "country": "Australia",
+        "emailAddress": "abc@gmail.com",
+        "password": "123456",
+        "agreeToTerms": true
+        },
+        {
+        "conition": "Validate with all required fields with valid data",
+        "firstName":"",
+        "lastName": "Doe",
+        "phoneNumber": "123-456-7890",
+        "country": "Australia",
+        "emailAddress": "abc@gmail.com",
+        "password": "123456",
+        "agreeToTerms": false
+        },
+        {
+            "conition": "Validate with all required fields with invalid password data",
+            "firstName": "Allen",
+            "lastName": "Doe",
+            "phoneNumber": "123-456-7890",
+            "country": "Australia",
+            "emailAddress": "abc@gmail.com",
+            "password": "123456123456123456123456",
+            "agreeToTerms": false
+            },
+            {
+                "conition": "Validate with all required fields with invalid phone number data",
+                "firstName": "Allen",
+                "lastName": "Doe",
+                "phoneNumber": "123-456-789",
+                "country": "Australia",
+                "emailAddress": "abc@gmail.com",
+                "password": "123456",
+                "agreeToTerms": false
+                }
+        
+        ]}
+
