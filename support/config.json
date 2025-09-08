@@ -1,3 +1,15 @@
 {
-    "baseUrl": "https://qa-practice.netlify.app"
+    "environments": {
+        "qa": {
+            "baseUrl": "https://qa-practice.netlify.app",
+            "apiUrl": "https://api-qa.example.com"
+        },
+        "staging": {
+            "baseUrl": "https://staging-practice.netlify.app",
+            "apiUrl": "https://api-staging.example.com"
+        }
+    },
+    "defaultEnvironment": "qa",
+    "timeout": 30000,
+    "retries": 2
 }

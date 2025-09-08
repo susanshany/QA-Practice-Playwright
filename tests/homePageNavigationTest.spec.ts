@@ -1,8 +1,10 @@
 import{test,expect}from'@playwright/test';
-import{baseUrl}from'../support/config.json';
-import {PageManager}from '../page-objects/pageManager';
+import {PageManager}from '../pages/pageManager';
+import config from '../support/config.json';
+
+const baseUrl = config.environments[config.defaultEnvironment].baseUrl;
 test.beforeEach(async({page})=> {
-   await page.goto(baseUrl)
+   await pageManager.goto(baseUrl)
 })
 test('navigate to home page', async({page})=> {
     const pm = new PageManager(page)

@@ -1,0 +1,69 @@
+
+            <!DOCTYPE html>
+            <html>
+                <head>
+                    <title>Test Report</title>
+                    <style>
+                        body { font-family: Arial, sans-serif; margin: 20px; }
+                        .summary { display: flex; gap: 20px; margin: 20px 0; }
+                        .status-passed { color: green; }
+                        .status-failed { color: red; }
+                        .test-case { border: 1px solid #ddd; margin: 10px 0; padding: 10px; }
+                    </style>
+                </head>
+                <body>
+                    <h1>Test Execution Report</h1>
+                    <div class="summary">
+                        <div>Total: 6</div>
+                        <div class="status-passed">Passed: 4</div>
+                        <div class="status-failed">Failed: 1</div>
+                        <div>Skipped: 0</div>
+                    </div>
+                    <div>Duration: 38645ms</div>
+                    <h2>Test Results</h2>
+                    
+                        <div class="test-case status-passed">
+                            <h3>Validate spot the bug page</h3>
+                            <div>Status: passed</div>
+                            <div>Duration: 10913ms</div>
+                            
+                        </div>
+                    
+                        <div class="test-case status-passed">
+                            <h3>Validate spot the bug form Validate with all required fields with valid data</h3>
+                            <div>Status: passed</div>
+                            <div>Duration: 12610ms</div>
+                            
+                        </div>
+                    
+                        <div class="test-case status-failed">
+                            <h3>navigate to home page</h3>
+                            <div>Status: failed</div>
+                            <div>Duration: 3806ms</div>
+                            <div class="error">Error: ReferenceError: pageManager is not defined</div>
+                        </div>
+                    
+                        <div class="test-case status-passed">
+                            <h3>Validate spot the bug form Validate with all required fields with invalid password data</h3>
+                            <div>Status: passed</div>
+                            <div>Duration: 8300ms</div>
+                            
+                        </div>
+                    
+                        <div class="test-case status-passed">
+                            <h3>Validate spot the bug form Validate with all required fields with invalid phone number data</h3>
+                            <div>Status: passed</div>
+                            <div>Duration: 8190ms</div>
+                            
+                        </div>
+                    
+                        <div class="test-case status-timedOut">
+                            <h3>Validate spot the bug form Validate with all field data</h3>
+                            <div>Status: timedOut</div>
+                            <div>Duration: 30934ms</div>
+                            <div class="error">Error: [31mTest timeout of 30000ms exceeded.[39m</div>
+                        </div>
+                    
+                </body>
+            </html>
+        

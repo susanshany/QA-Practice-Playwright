@@ -1,0 +1,78 @@
+{
+  "totalDuration": 38645,
+  "timestamp": "2025-09-08T00:41:42.741Z",
+  "tests": [
+    {
+      "title": "Validate spot the bug page",
+      "status": "passed",
+      "duration": 10913,
+      "error": null,
+      "location": {
+        "file": "C:\\Users\\JPSS\\QA-Practice-Playwright\\QA-Practice-Playwright\\tests\\spotTheBugPageValidationTest.spec.ts",
+        "line": 26,
+        "column": 5
+      }
+    },
+    {
+      "title": "Validate spot the bug form Validate with all required fields with valid data",
+      "status": "passed",
+      "duration": 12610,
+      "error": null,
+      "location": {
+        "file": "C:\\Users\\JPSS\\QA-Practice-Playwright\\QA-Practice-Playwright\\tests\\spotTheBugPageValidationTest.spec.ts",
+        "line": 38,
+        "column": 9
+      }
+    },
+    {
+      "title": "navigate to home page",
+      "status": "failed",
+      "duration": 3806,
+      "error": "ReferenceError: pageManager is not defined",
+      "location": {
+        "file": "C:\\Users\\JPSS\\QA-Practice-Playwright\\QA-Practice-Playwright\\tests\\homePageNavigationTest.spec.ts",
+        "line": 9,
+        "column": 5
+      }
+    },
+    {
+      "title": "Validate spot the bug form Validate with all required fields with invalid password data",
+      "status": "passed",
+      "duration": 8300,
+      "error": null,
+      "location": {
+        "file": "C:\\Users\\JPSS\\QA-Practice-Playwright\\QA-Practice-Playwright\\tests\\spotTheBugPageValidationTest.spec.ts",
+        "line": 38,
+        "column": 9
+      }
+    },
+    {
+      "title": "Validate spot the bug form Validate with all required fields with invalid phone number data",
+      "status": "passed",
+      "duration": 8190,
+      "error": null,
+      "location": {
+        "file": "C:\\Users\\JPSS\\QA-Practice-Playwright\\QA-Practice-Playwright\\tests\\spotTheBugPageValidationTest.spec.ts",
+        "line": 38,
+        "column": 9
+      }
+    },
+    {
+      "title": "Validate spot the bug form Validate with all field data",
+      "status": "timedOut",
+      "duration": 30934,
+      "error": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+      "location": {
+        "file": "C:\\Users\\JPSS\\QA-Practice-Playwright\\QA-Practice-Playwright\\tests\\spotTheBugPageValidationTest.spec.ts",
+        "line": 38,
+        "column": 9
+      }
+    }
+  ],
+  "summary": {
+    "total": 6,
+    "passed": 4,
+    "failed": 1,
+    "skipped": 0
+  }
+}

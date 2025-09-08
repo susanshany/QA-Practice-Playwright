@@ -7,6 +7,9 @@ export class HelperBase{
     constructor(page: Page) {
         this.page = page;
     }
+    async goTo(url: string) {
+        await this.page.goto(url, { waitUntil: 'domcontentloaded' });
+    }
     async waitForNumberOfSeconds(timeInSeconds: number) {
         await this.page.waitForTimeout(timeInSeconds * 1000);
     }
@@ -29,7 +32,13 @@ export class HelperBase{
         await locator.fill(text);
         await this.inputFieldAssertText(locator, text);
     }
-    async inputFieldAssertText(locator: Locator, text: string) {
-        await expect(locator).toHaveValue(text);
+    async inputFieldAssertText(locator: Locator, expectedText: string) {
+        await expect(locator).toHaveValue(expectedText);
     }
+    async selectOptionFromDropdown(locator: Locator, value: string) {
+        await locator.selectOption({ label: value });
+    }
+    async getCurrentUrl(){
+        return currentUrl = page.url();
+        }
 }
