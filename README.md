@@ -86,6 +86,9 @@ npx playwright test example.spec.ts --project=chromium --headed
 //run the specific test in browser to see the test execution
 npx playwright test -g "has title" --project=chromium --headed
 
+//run the test in debug mode
+npx playwright test --debug
+
 // to skip the test
 in code
 test.skip
