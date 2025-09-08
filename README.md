@@ -94,6 +94,7 @@ npx playwright codegen url
 
 //If you need screenshot for every steps add screenshot : 'on' in configurtion file 
 //To get detaild report with trace log information add trace : 'on'  in configurtion file 
+// to see the built in report copy the absolute path of Index.html file inside the playwright-report folder and paste in the browser
 
 // to skip the test
 in code
