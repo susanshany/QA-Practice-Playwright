@@ -89,6 +89,10 @@ npx playwright test -g "has title" --project=chromium --headed
 //run the test in debug mode
 npx playwright test --debug
 
+//run the test in record and playback mode
+npx playwright codegen url
+
+
 // to skip the test
 in code
 test.skip
