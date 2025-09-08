@@ -92,6 +92,8 @@ npx playwright test --debug
 //run the test in record and playback mode
 npx playwright codegen url
 
+//If you need screenshot for every steps add screenshot : 'on' in configurtion file 
+//To get detaild report with trace log information add trace : 'on'  in configurtion file 
 
 // to skip the test
 in code
