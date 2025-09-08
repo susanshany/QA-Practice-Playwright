@@ -4,7 +4,7 @@ import config from '../support/config.json';
 
 const baseUrl = config.environments[config.defaultEnvironment].baseUrl;
 test.beforeEach(async({page})=> {
-   await pageManager.goto(baseUrl)
+   await page.goto(baseUrl)
 })
 test('navigate to home page', async({page})=> {
     const pm = new PageManager(page)

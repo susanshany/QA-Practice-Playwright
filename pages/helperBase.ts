@@ -7,9 +7,6 @@ export class HelperBase{
     constructor(page: Page) {
         this.page = page;
     }
-    async goTo(url: string) {
-        await this.page.goto(url, { waitUntil: 'domcontentloaded' });
-    }
     async waitForNumberOfSeconds(timeInSeconds: number) {
         await this.page.waitForTimeout(timeInSeconds * 1000);
     }
