@@ -10,8 +10,10 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.54.1",
-    "@types/node": "^22.15.17"
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.15.17",
+    "allure": "^0.0.0",
+    "allure-playwright": "^3.3.3"
   },
   "dependencies": {
     "@types/winston": "^2.4.4",

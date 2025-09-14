@@ -95,7 +95,12 @@ npx playwright codegen url
 //If you need screenshot for every steps add screenshot : 'on' in configurtion file 
 //To get detaild report with trace log information add trace : 'on'  in configurtion file 
 // to see the built in report copy the absolute path of Index.html file inside the playwright-report folder and paste in the browser
-
+//To see the allure report we need to install dependency
+npm install --save-dev @playwright/test allure-playwright
+And add "reporter: [["allure-playwright"]]" inside configuration file
+After running the test run this command toopen the allure report :  allure serve allure-results
+//Download Jenkin
+and go to the location in terminal where the jenkin downloaded and run  "java -jar jenkins.war -httpPort=9090"    
 // to skip the test
 in code
 test.skip

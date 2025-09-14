@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+ import { defineConfig, devices } from '@playwright/test';
 import type { PlaywrightTestConfig } from '@playwright/test';
 import './utils/custom-reporter';
 
@@ -27,7 +27,9 @@ const config: PlaywrightTestConfig ={
   reporter: [
         ['list'], // Keep the default list reporter
         ['html'], // Keep the default HTML reporter
-        ['./utils/custom-reporter.ts'] // Add our custom reporter
+        ['./utils/custom-reporter.ts'], // Add our custom reporter
+        ["line"],
+        ["allure-playwright"]
     ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
